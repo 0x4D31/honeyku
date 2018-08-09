@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+   <body>
+      {% if browser=="chrome" %}
+      <h3>Your Browser is Chrome!</h3>
+      {% else %}
+      <h3>Your Browser is Not Chrome!</h3>
+      {% endif %}
+      User-Agent: {{ ua }}
+   </body>
+</html>

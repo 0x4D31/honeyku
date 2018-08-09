@@ -1,0 +1,60 @@
+{
+	"default-http-response": {
+		"content-type": "text/html",
+		"body": "default.html"
+	},
+	"traps": {
+		"/awesomeapp/v2/iam/creds": {
+			"trap-note": "default note for the uri",
+			"trap-response": {
+				"content-type": "text/html",
+				"body": "custom.html"
+			},
+			"id=1": {
+				"token-note": "sample note for the token"
+			}
+		},
+		"/v1/get-pass": {
+			"user=jack": {
+				"token-note": "token is embedded in secret.doc",
+				"token-response": {
+					"content-type": "image/png",
+					"body": "static/pixel.png"
+				}
+			},
+			"page=2": {
+				"token-note": "hidden link in login page",
+				"token-response": {
+					"content-type": "image/jpg",
+					"body": "static/homer.jpg"
+				}
+			}
+		}
+	},
+	"alert": {
+		"slack": {
+			"enabled": "false",
+			"webhook-url": "https://hooks.slack.com/services/T3Sb6EXAMPLE"
+		},
+		"email": {
+			"enabled": "false",
+			"to_email": "honeyku.alert1935342@mailinator.com",
+			"smtp_server": "smtp.gmail.com",
+			"smtp_port": 587,
+			"smtp_user": "youremail@gmail.com",
+			"smtp_password": "yourpassword"
+		},
+		"sms": {
+			"enabled": "false",
+			"to_number": "",
+			"from_number": "",
+			"twilio_account_sid": "",
+			"twilio_auth_token": ""
+		}
+	},
+	"threat-intel-lookup": {
+		"enabled": "false",
+		"cymon2-user": "",
+		"cymon2-pass": ""
+	}
+}
