@@ -4,7 +4,7 @@ Heroku-based honey{pot/token}
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-honeyku (a sister project of [honeyλ](https://www.github.com/0x4D31/honeyLambda) is a simple Heroku-based web honeypot that can be used to create and monitor fake HTTP endpoints (i.e. [honeytokens](https://www.symantec.com/connect/articles/honeytokens-other-honeypot)). 
+honeyku (a sister project of [honeyλ](https://www.github.com/0x4D31/honeyLambda)) is a simple Heroku-based web honeypot that can be used to create and monitor fake HTTP endpoints (i.e. [honeytokens](https://www.symantec.com/connect/articles/honeytokens-other-honeypot)). 
 * Slack notifications
 * Email and SMS alerts
 * Load config from local file or Amazon S3
