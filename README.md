@@ -21,23 +21,33 @@ Honeyku is designed to be deployed on Heroku cloud application platform (PaaS), 
 * a FREE [Heroku account](https://signup.heroku.com/signup/dc).
 * Install Python version 3.*
 * Install Pipenv
+
 ```$ pip install pipenv``` OR ```$ brew install pipenv``` (on macOS)
 * Install [Heroku Cli](https://devcenter.heroku.com/articles/getting-started-with-python#set-up):
 * Clone the app source-code
-```$ git clone https://github.com/0x4D31/honeyku```
-```$ cd honeyku```
+
+```
+$ git clone https://github.com/0x4D31/honeyku
+$ cd honeyku
+```
 * Edit `config.json` and fill in your Slack Webhook URL. Change the trap/token configs as you need.
 * You can customize the HTTP response for each token/trap
   * For example you can return a 1x1px beacon image in response and embed the token in your decoy documents or email (tracking pixel!)
 
 ## Deploy
 * Deploy the app
-```$ heroku login```
-```$ heroku create```
-```$ git push heroku master```
+
+```
+$ heroku login
+$ heroku create
+$ git push heroku master
+```
 * Ensure the app is running
-```$ heroku ps```
-```$ heroku open```
+
+```
+$ heroku ps
+$ heroku open
+```
 
 
 Output:
