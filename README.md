@@ -94,3 +94,4 @@ To https://git.heroku.com/still-chamber-36399.git
 - [ ] Check the source IP address against Threat Intelligence feeds (e.g. Cymon API)
 - [ ] SMS alert ([Twilio](https://twilio.com))
 - [ ] Logging: Support HTTP endpoint
+- [ ] HTTP Client Fingerprinting
